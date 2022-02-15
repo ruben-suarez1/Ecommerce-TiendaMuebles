@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Contacto</title>
+</head>
+<body>
+    <!--Titulo Principal-->
+    <header>
+        <h1 class="nombre-principal">Tienda <span>Muebles</span></h1>
+    </header>
+
+    <!--Barra de Navegacion-->
+    <div class="contenedor-navegacion">
+        <nav class="nav-pricipal contenedor">
+            <a href="index.html">Index</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <!--Contenido Principal-->
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contactos</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre Completo" required>
+                </div>
+                <div class="campo">    
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" placeholder="Asunto" required>
+                </div>
+                <div class="campo">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" placeholder="Teléfono" required>
+                </div>
+                <div class="campo">
+                    <label for="fecha-nacimiento">Fecha de Nacimento</label>
+                    <input type="date">
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" cols="20" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+             <fieldset>
+                <legend>País</legend>
+
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select name="pais">
+                        <option disa>-- seleccione --</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="mexico">México</option>
+                        <option value="peru">Perú</option>
+                    </select>
+                </div>
+             </fieldset>
+
+             <fieldset>
+                 <legend>Información Extra</legend>
+                 <div class="campo">
+                     <label for="cliente">Cliente</label>
+                     <input type="radio" name="tipo">
+                </div>
+
+                <div class="campo">
+                     <label for="proveedor">Proveedor</label>
+                     <input type="radio" name="tipo">
+                 </div>
+                 
+                 <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Sala">
+                    </datalist>
+                 </div>
+             </fieldset>
+             <input class="btn" type="submit" value="Enviar Formulario">
+        </form>
+
+    </main>
+
+     <!--Inicio Footer-->
+     <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorias</h3>
+
+                <nav class="footer-menu">
+                    <a href="">Cocina</a>
+                    <a href="">Oficina</a>
+                    <a href="">Jardín</a>
+                    <a href="">Cochera</a>
+                    <a href="">Dormitorios</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Sobre Nosotros</h3>
+
+                <nav class="footer-menu">
+                    <a href="">Nuestra Historia</a>
+                    <a href="">Misión, Visión</a>
+                    <a href="">Carreras</a>
+                    <a href="">Políticas de Privacidad</a>
+                    <a href="">Términos del Servicio</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Soporte</h3>
+
+                <nav class="footer-menu">
+                    <a href="">Preguntas Frecuentes</a>
+                    <a href="">Ayuda en Línea</a>
+                    <a href="">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+
+        <p>Derechos Resevados @Ruben-suarez</p>
+    </footer>
+
+</body>
+</html>
